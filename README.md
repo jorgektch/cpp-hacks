@@ -1,2 +1,2 @@
-# -cpp-hacks-new
+# CPP Hacks
 Fun web projects built with C++ only
