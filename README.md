@@ -1,2 +1,2 @@
 # CPP Hacks
-Fun web projects built with C++ only.
+Fun projects built with C++ only.
