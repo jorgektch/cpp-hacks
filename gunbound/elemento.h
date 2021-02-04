@@ -1,5 +1,7 @@
 #include "pragma"
 #include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 class Elemento{
 private:
@@ -9,6 +11,7 @@ private:
     int velocY;
     int acelerX;
     int acelerY;
+    vector<string> asciiArt;
 public:
     Elemento(int posX, int posY, int velocX, int velocY, int acelerX, int acelerY){
         this->posX = posX;
@@ -26,6 +29,7 @@ public:
     void setVelocY(int velocY){ this->velocY = velocY; }
     void setAcelerX(int acelerX){ this->acelerX = acelerX; }
     void setAcelerY(int acelerY){ this->acelerY = acelerY; }
+    void setAsciiArt(vector<string> asciiArt){ this->asciiArt = asciiArt; }
 
     int getPosX(){ return this->posX; }
     int getPosY(){ return this->posY; }
@@ -33,6 +37,7 @@ public:
     int getVelocY(){ return this->velocY; }
     int getAcelerX(){ return this->acelerX; }
     int getAcelerY(){ return this->acelerY; }
+    vector<string> getAsciiArt(){ return this->asciiArt; }
 
     void mover(int deltaTiempo){
         this->moverX(deltaTiempo);
@@ -47,4 +52,8 @@ public:
     }
     void acelerarX(int deltaTiempo){ this->setVelocX(this->getVelocX()+this->getAcelerX()*deltaTiempo); }
     void acelerarY(int deltaTiempo){ this->setVelocY(this->getVelocY()+this->getAcelerY()*deltaTiempo); }
+
+    void detectarColision(Elemento* e){
+        /* Pendiente */
+    }
 };

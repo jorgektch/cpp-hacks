@@ -4,7 +4,8 @@ class Partida{
 private:
     int nivel;
     int puntaje;
-    Elemento* p;
-    Heroe* e;
+    Elemento* personaje;
+    Elemento* heroe;
 public:
+
 };
