@@ -1,5 +1,6 @@
-#include <juego.h>
-int main(){
-	Juego* j;
-	return 0;
+#include <iostream>
+#include "partida.h"
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
 }
